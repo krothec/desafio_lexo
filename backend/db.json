@@ -1,0 +1,66 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "Fri Feb 05 2021 10:20:00 GMT-0300 (Brasilia Standard Time)",
+      "title": "Pagamento do boleto"
+    }, {
+      "id": 2,
+      "date": "Mon Feb 08 2021 22:00:00 GMT-0300 (Brasilia Standard Time)",
+      "title": "Data de início do contrato X"
+    }, {
+      "id": 3,
+      "date": "Thu Feb 11 2021 10:00:00 GMT-0300 (Brasilia Standard Time)",
+      "title": "Data de término do contrato Y"
+    }, {
+      "id": 4,
+      "date": "Thu Feb 11 2021 13:00:00 GMT-0300 (Brasilia Standard Time)",
+      "title": "Reunião com gestores p/ definição de budget"
+    }
+  ],
+  "documents": [
+    {
+      "id": 1,
+      "title": "Termo Aditivo",
+      "sub_title": "Outros",
+      "status": "aguard. assinatura",
+      "parties": ["João Carlos", "Alexandre Silva", "Felipe Domingues", "Larissa Souza"],
+      "object": "Lorem ispsum dolem lorem ipsum dolem lorem ipsum lorem..."
+    }, {
+      "id": 2,
+      "title": "Procuração",
+      "sub_title": "Procuração Ad Judicia",
+      "status": "em revisão",
+      "parties": ["Isabella Rangel", "Bruno João", "Gabriel Guntin"],
+      "object": "Lorem ispsum dolem lorem ipsum dolem lorem ipsum lorem..."
+    }, {
+      "id": 3,
+      "title": "Acordo de Confidencialidade",
+      "sub_title": "Acordo de Confidencialidade",
+      "status": "aguard. aprov.",
+      "parties": ["Sandra Gobetti", "Julia Silva", "Lilian Spolador", "Nicolas Santos"],
+      "object": "Lorem ispsum dolem lorem ipsum dolem lorem ipsum lorem..."
+    }, {
+      "id": 4,
+      "title": "RECIBO PGTO.",
+      "sub_title": "Recibo",
+      "status": "assinado",
+      "parties": ["Ronald Caitano", "Ana Carolina"],
+      "object": "Lorem ispsum dolem lorem ipsum dolem lorem ipsum lorem..."
+    }, {
+      "id": 5,
+      "title": "Contrato de Distribuição",
+      "sub_title": "Contrato de Fornecimento",
+      "status": "arquivado",
+      "parties": ["Carolina Martins"],
+      "object": "Lorem ispsum dolem lorem ipsum dolem lorem ipsum lorem..."
+    }, {
+      "id": 6,
+      "title": "Distrato",
+      "sub_title": "Distrato",
+      "status": "aguard. aprov.",
+      "parties": ["Andressa Henriques", "Luis Alberto", "Antonio Tavares"],
+      "object": "Lorem ispsum dolem lorem ipsum dolem lorem ipsum lorem..."
+    }
+  ]
+}
