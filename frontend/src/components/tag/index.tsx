@@ -12,7 +12,7 @@ const Tag = (tag: TagType) => {
 			style={{
 				maxHeight: '2.8rem',
 				background: `${tag.background}`,
-				padding: '0.6rem 1.8rem 0.6rem 2.6rem',
+				padding: '1rem',
 				borderRadius: '0.8rem',
 				fontSize: '1.2rem',
 				fontWeight: '700',

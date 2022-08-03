@@ -1,55 +1,44 @@
 import styled from 'styled-components';
 
 export const SvgHeader = styled.div`
-	position: relative;
-	img {
-		width: -webkit-fill-available;
-	}
-`;
-export const SvgSubHeader = styled.div`
-	position: relative;
-
-	.SubheaderSVG {
-		display: flex;
-		max-width: 139.4rem;
-		width: -webkit-fill-available;
-		margin: auto;
-		margin-top: 0.6rem;
-		margin-left: 2.2rem;
-		margin-right: 2.2rem;
-	}
-
-	.CalendarSVG {
-		width: 4.7rem;
-		display: flex;
-		position: absolute;
-		right: 22.6rem;
-		top: 0;
-		margin-top: 3.5rem;
+	.responsive {
+		width: 100%;
+		height: auto;
 	}
 `;
 
 export const LexioDiv = styled.p`
 	font-weight: 700;
-	font-size: 2.4rem;
-	line-height: 3.3rem;
+	font-size: 3rem;
+	line-height: 3.5rem;
 	color: ${props => props.theme.colors.offWhite};
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	top: 0;
-	left: 7.2rem;
-	margin-top: 4.2rem;
+	margin-left: 5%;
+	margin-top: 3%;
+
+	@media screen and (max-width: 425px) {
+		margin-top: 0rem;
+		font-size: 1.5rem;
+		left: 4rem;
+	}
 `;
 
 export const Div = styled.div`
 	display: flex;
 	position: absolute;
 	font-weight: 700;
-	font-size: 3.6rem;
-	right: 19.5rem;
+	font-size: 3.5rem;
+	margin-left: 75%;
+	margin-top: 2.5%;
+
 	color: ${props => props.theme.colors.offWhite};
-	top: 3.3rem;
+
+	@media screen and (max-width: 425px) {
+		margin-top: 1%;
+		font-size: 2rem;
+	}
 `;
 
 export const Text = styled.div`
@@ -57,10 +46,14 @@ export const Text = styled.div`
 	position: absolute;
 	color: ${props => props.theme.colors.offWhite};
 	font-weight: 700;
-	font-size: 1.3rem;
-	top: 4rem;
-	right: 11rem;
-	width: 7.1rem;
+	font-size: 1.5rem;
+	margin-left: 78%;
+	margin-top: 3.5%;
+
+	@media screen and (max-width: 425px) {
+		margin-top: 1%;
+		font-size: 1rem;
+	}
 `;
 
 export const Exit = styled.div`
@@ -68,8 +61,29 @@ export const Exit = styled.div`
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: transparent;
+	background: red;
 	height: 6.3rem;
 	width: 13rem;
 	cursor: pointer;
+`;
+
+export const EventBar = styled.div`
+	display: flex;
+	max-width: 139.4rem;
+	margin: auto;
+	position: relative;
+
+	.SubheaderSVG {
+		width: 100%;
+		height: auto;
+	}
+
+	.CalendarSVG {
+		width: 4%;
+		height: auto;
+		display: flex;
+		position: absolute;
+		margin-left: 70%;
+		margin-top: 2.5%;
+	}
 `;

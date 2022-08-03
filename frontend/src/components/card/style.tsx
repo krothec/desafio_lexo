@@ -7,16 +7,37 @@ export const Card = styled.section`
 	background-color: ${props => props.theme.colors.lightBackground};
 	display: flex;
 	margin: auto;
-	margin-top: 0.7rem;
-	margin-bottom: 0.7rem;
 	flex-direction: row;
 	align-items: center;
+	margin: auto;
+	margin-bottom: 1.4rem;
+
+	@media screen and (max-width: 425px) {
+		display: flex;
+		max-height: 100%;
+		flex-direction: column;
+		flex-direction: column;
+		border: solid 1px #82828269;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 `;
 
 export const LeftArea = styled.div`
 	display: flex;
 	width: 26rem;
 	padding: 1.9rem 0rem 1.8rem 2rem;
+
+	@media screen and (max-width: 425px) {
+		display: flex;
+		width: 100%;
+		padding: 0rem;
+		flex-direction: column;
+		align-items: center;
+	}
+	@media screen and (max-width: 768px) {
+		padding: 1rem;
+	}
 
 	h1 {
 		color: ${props => props.theme.colors.label};
@@ -41,16 +62,37 @@ export const TagArea = styled.div`
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
+
+	@media screen and (max-width: 425px) {
+		display: flex;
+		width: 100%;
+		padding: 0rem;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 0.6rem 1rem 0.6rem 2rem;
+	}
 `;
-export const ObjectArea = styled.div`
+export const ObjectArea = styled.p`
 	width: 28.7rem;
-	padding: 2.5rem 0rem 2.5rem 0rem;
 	font-weight: 600;
 	font-size: 1.2rem;
 	line-height: 1.6rem;
 	display: flex;
 	align-items: center;
 	letter-spacing: 0.1rem;
+
+	@media screen and (max-width: 425px) {
+		display: flex;
+		width: 100%;
+		padding: 0rem;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 	span {
 		color: ${props => props.theme.colors.text};
 	}
@@ -61,13 +103,22 @@ export const ObjectArea = styled.div`
 export const PartArea = styled.div`
 	display: flex;
 	width: 20rem;
-	margin-left: 10rem;
 	background: #f5f5f5;
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 0.9rem 0rem 1rem 0.9rem;
 	position: relative;
+	margin-left: auto;
+
+	@media screen and (max-width: 425px) {
+		display: flex;
+		width: 100%;
+		padding: 0rem;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0rem;
+	}
 
 	.partes {
 		font-weight: 700;
@@ -89,6 +140,15 @@ export const AvatarRound = styled.div`
 	height: 3.5rem;
 	width: 3.5rem;
 	margin-right: 0.7rem;
+
+	@media screen and (max-width: 425px) {
+		display: flex;
+		width: 100%;
+		padding: 0rem;
+		flex-direction: column;
+		align-items: center;
+		background-color: transparent;
+	}
 `;
 
 export const Letters = styled.p`
@@ -103,9 +163,16 @@ export const Div = styled.div`
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	@media screen and (max-width: 768px) {
+		width: 16.6rem;
+	}
 `;
 
 export const SVG = styled.div`
+	display: flex;
+	max-width: 6rem;
+	margin-left: auto;
+	margin-right: 1%;
 	rect {
 		margin-left: '60px';
 		color: '#6C7892';

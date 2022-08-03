@@ -40,11 +40,7 @@ const Cards: React.FC = () => {
 				/>
 			</Div>
 			{context.listDocs.map((doc, idx) => {
-				return (
-					<>
-						<CardComponent key={idx.toString()} doc={doc} />
-					</>
-				);
+				return <CardComponent key={idx.toString()} doc={doc} />;
 			})}
 		</>
 	);

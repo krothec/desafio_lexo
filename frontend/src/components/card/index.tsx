@@ -53,12 +53,7 @@ const CardComponent = ({ doc }: Doc) => {
 			<TagArea>
 				<Tag text={doc.status} background={doc.background} />
 			</TagArea>
-			<ObjectArea>
-				<p>
-					<span>Objeto:</span>
-					{doc.object}
-				</p>
-			</ObjectArea>
+			<ObjectArea>Objeto:{doc.object}</ObjectArea>
 			<PartArea>
 				<p className="partes">Partes do contrato</p>
 				<Div>
@@ -76,11 +71,7 @@ const CardComponent = ({ doc }: Doc) => {
 				</Div>
 			</PartArea>
 			<SVG>
-				<DotsThreeOutlineVertical
-					size={30}
-					weight="fill"
-					style={{ marginLeft: '60px', color: '#6C7892' }}
-				/>
+				<DotsThreeOutlineVertical size={30} weight="fill" />
 			</SVG>
 		</Card>
 	);
