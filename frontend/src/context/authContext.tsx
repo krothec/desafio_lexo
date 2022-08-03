@@ -14,6 +14,7 @@ type AuthContextType = {
 	authenticated: boolean;
 	loading: boolean;
 	handleLogin: (user: IUser) => void;
+	logout: () => void;
 };
 
 const defaultValue = {
@@ -24,6 +25,7 @@ const defaultValue = {
 	loading: true,
 	authenticated: false,
 	handleLogin: () => {},
+	logout: () => {},
 };
 
 export const AuthContext = createContext<AuthContextType>(defaultValue);
@@ -74,11 +76,12 @@ export const AuthContextProvider = ({ children }: AuthContextProps) => {
 			});
 	}
 
-	// const logout = () => {
-	// 	localStorage.removeItem('token');
-	// 	api.defaults.headers.common['Authorization'] = '';
-	// 	navigate('/');
-	// };
+	const logout = () => {
+		localStorage.removeItem('token');
+		localStorage.removeItem('user');
+		api.defaults.headers.common['Authorization'] = '';
+		navigate('/');
+	};
 
 	return (
 		<AuthContext.Provider
@@ -87,6 +90,7 @@ export const AuthContextProvider = ({ children }: AuthContextProps) => {
 				authenticated,
 				handleLogin,
 				loading,
+				logout,
 			}}
 		>
 			{children}

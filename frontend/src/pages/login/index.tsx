@@ -6,6 +6,7 @@ import { InputStyle, Title, P, Left, Right, Div } from './style';
 import { AuthContext } from '../../context/authContext';
 import { useTheme } from 'styled-components';
 import Main from '../../assets/main.svg';
+import Lexio from '../../assets/lexio.svg';
 
 interface IProps {
 	onLogin?: (login: IUser) => void;
@@ -31,7 +32,8 @@ const Login: React.FC<IProps> = () => {
 	return (
 		<Div>
 			<Left>
-				<img src={Main} alt="Lexio" width="725px" />
+				<img className="logo" src={Main} alt="Lexio" />
+				<img className="LexioAlt" src={Lexio} alt="Lexio alternativo" />
 			</Left>
 			<Right>
 				<Title>Bem vindo(a)!</Title>
@@ -47,7 +49,6 @@ const Login: React.FC<IProps> = () => {
 						name="email"
 						value={user.email}
 						onChange={onInputChange}
-						width="45.8rem"
 						height="5.6rem"
 						border="none"
 						title="Email"
@@ -60,7 +61,6 @@ const Login: React.FC<IProps> = () => {
 						name="password"
 						value={user.password}
 						onChange={onInputChange}
-						width="45.8rem"
 						height="5.6rem"
 						border="none"
 						title="Email"
