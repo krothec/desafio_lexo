@@ -38,6 +38,7 @@ const Cards: React.FC = () => {
 					value={term}
 					onChange={onInputChange}
 					name="name"
+					icon={true}
 				/>
 			</Div>
 			{context.listDocs.map((doc, idx) => {

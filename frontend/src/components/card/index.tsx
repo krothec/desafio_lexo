@@ -59,13 +59,16 @@ const CardComponent = ({ doc }: Doc) => {
 				<Div>
 					{doc.parties.map((part, idx) => {
 						return (
-							<>
-								<Tooltip content={part} direction="top" delay="0">
-									<AvatarRound key={idx.toString()}>
-										<Letters>{getLetters(part)}</Letters>
-									</AvatarRound>
-								</Tooltip>
-							</>
+							<Tooltip
+								content={part}
+								direction="top"
+								delay="0"
+								key={idx.toString()}
+							>
+								<AvatarRound>
+									<Letters>{getLetters(part)}</Letters>
+								</AvatarRound>
+							</Tooltip>
 						);
 					})}
 				</Div>

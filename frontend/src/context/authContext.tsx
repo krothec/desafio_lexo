@@ -63,7 +63,6 @@ export const AuthContextProvider = ({ children }: AuthContextProps) => {
 				if (response.data) {
 					localStorage.setItem('user', JSON.stringify(params));
 					localStorage.setItem('token', JSON.stringify(response.data.token));
-					debugger;
 					api.defaults.headers.common[
 						'Authorization'
 					] = `Bearer ${response.data.token}`;

@@ -16,6 +16,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 	margin?: string;
 	type?: string;
 	background?: string;
+	icon?: boolean;
 	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -32,6 +33,7 @@ const Input: React.FC<InputProps> = ({
 	margin,
 	type,
 	background,
+	icon,
 }) => {
 	return (
 		<div
@@ -56,16 +58,18 @@ const Input: React.FC<InputProps> = ({
 					background,
 				}}
 			></input>
-			<MagnifyingGlass
-				size={32}
-				weight="thin"
-				style={{
-					position: 'absolute',
-					right: 0,
-					marginTop: '1rem',
-					marginRight: '1rem',
-				}}
-			/>
+			{icon && (
+				<MagnifyingGlass
+					size={32}
+					weight="thin"
+					style={{
+						position: 'absolute',
+						right: 0,
+						marginTop: '1rem',
+						marginRight: '1rem',
+					}}
+				/>
+			)}
 		</div>
 	);
 };

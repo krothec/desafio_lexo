@@ -50,10 +50,12 @@ const Login: React.FC<IProps> = () => {
 						value={user.email}
 						onChange={onInputChange}
 						height="5.6rem"
+						width="76rem"
 						border="none"
 						title="Email"
 						padding="0rem 1.6rem 0rem 1.6rem"
 						margin="0rem 0rem 3.1rem 0rem"
+						background="#F0F0F0"
 					/>
 					<Input
 						type="text"
@@ -63,9 +65,11 @@ const Login: React.FC<IProps> = () => {
 						onChange={onInputChange}
 						height="5.6rem"
 						border="none"
+						width="76rem"
 						title="Email"
 						padding="0rem 1.6rem 0rem 1.6rem"
 						margin="0rem 0rem 3.1rem 0rem"
+						background="#F0F0F0"
 					/>
 				</InputStyle>
 				<Button
