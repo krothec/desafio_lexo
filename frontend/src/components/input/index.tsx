@@ -14,15 +14,14 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 	padding?: string;
 	margin?: string;
 	type?: string;
+	background?: string;
 	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Input: React.FC<InputProps> = ({
-	placeholder,
 	name,
 	width,
-	title,
-	subtitle,
+	placeholder,
 	height,
 	border,
 	radius,
@@ -31,25 +30,25 @@ const Input: React.FC<InputProps> = ({
 	onChange,
 	margin,
 	type,
+	background,
 }) => {
 	return (
-		<div style={{ position: 'relative' }}>
-			<p>{title}</p>
-			<input
-				value={value}
-				name={name}
-				onChange={onChange}
-				type={type}
-				style={{
-					width,
-					height,
-					border,
-					borderRadius: radius,
-					padding,
-					margin,
-				}}
-			></input>
-		</div>
+		<input
+			placeholder={placeholder}
+			value={value}
+			name={name}
+			onChange={onChange}
+			type={type}
+			style={{
+				width,
+				height,
+				border,
+				borderRadius: radius,
+				padding,
+				margin,
+				background,
+			}}
+		></input>
 	);
 };
 export default Input;

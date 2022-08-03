@@ -14,6 +14,12 @@ export interface IDocs {
 	title: string;
 	sub_title: string;
 	status: string;
-	parties: [];
+	parties: string[];
 	object: string;
+	background?: string;
+}
+
+export interface ITag {
+	text: string;
+	background: string;
 }

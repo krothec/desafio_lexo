@@ -11,6 +11,7 @@ const theme = {
 		offWhite: '#FCFCFC',
 		yellow: '#FEAD00',
 		lightYellow: '#FFCE66',
+		gray: '#828282',
 	},
 	tagColors: {
 		defeated: '#E74C3C',
