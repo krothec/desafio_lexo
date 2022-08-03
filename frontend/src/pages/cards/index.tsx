@@ -4,6 +4,7 @@ import CardComponent from '../../components/card';
 import { PanelContext } from '../../context/panelContext';
 import Input from '../../components/input';
 import { Div } from './style';
+import { MagnifyingGlass } from 'phosphor-react';
 
 const Cards: React.FC = () => {
 	const context = useContext(PanelContext);

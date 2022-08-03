@@ -4,15 +4,17 @@ import SubHeaderSvg from '../../../assets/subHeader.svg';
 import Calendar from '../../../assets/calendar.svg';
 import { SvgHeader, LexioDiv, Div, Text, Exit, EventBar } from './style';
 import { PanelContext } from '../../../context/panelContext';
+import { AuthContext } from '../../../context/authContext';
 
 const Header: React.FC = () => {
 	const context = useContext(PanelContext);
+	const contextAuth = useContext(AuthContext);
 
 	return (
 		<>
 			<SvgHeader>
 				<img className="responsive" src={HeaderSvg} alt="Menu do usuário" />
-				{/* <Exit onClick={() => contextAuth.logout()} /> */}
+				<Exit onClick={() => contextAuth.logout()} />
 			</SvgHeader>
 			<EventBar className="EventBar">
 				<img

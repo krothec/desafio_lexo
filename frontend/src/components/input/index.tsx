@@ -1,3 +1,4 @@
+import { MagnifyingGlass } from 'phosphor-react';
 import { HTMLAttributes, InputHTMLAttributes } from 'react';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -33,22 +34,39 @@ const Input: React.FC<InputProps> = ({
 	background,
 }) => {
 	return (
-		<input
-			placeholder={placeholder}
-			value={value}
-			name={name}
-			onChange={onChange}
-			type={type}
+		<div
 			style={{
-				width,
-				height,
-				border,
-				borderRadius: radius,
-				padding,
-				margin,
-				background,
+				display: 'flex',
+				position: 'relative',
 			}}
-		></input>
+		>
+			<input
+				placeholder={placeholder}
+				value={value}
+				name={name}
+				onChange={onChange}
+				type={type}
+				style={{
+					width,
+					height,
+					border,
+					borderRadius: radius,
+					padding,
+					margin,
+					background,
+				}}
+			></input>
+			<MagnifyingGlass
+				size={32}
+				weight="thin"
+				style={{
+					position: 'absolute',
+					right: 0,
+					marginTop: '1rem',
+					marginRight: '1rem',
+				}}
+			/>
+		</div>
 	);
 };
 export default Input;

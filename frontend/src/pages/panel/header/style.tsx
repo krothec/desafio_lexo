@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const SvgHeader = styled.div`
+	display: flex;
+	position: relative;
+	margin-bottom: 0.8rem;
+
 	.responsive {
 		width: 100%;
 		height: auto;
@@ -61,7 +65,7 @@ export const Exit = styled.div`
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: red;
+	background: transparent;
 	height: 6.3rem;
 	width: 13rem;
 	cursor: pointer;

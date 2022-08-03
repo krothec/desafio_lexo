@@ -163,6 +163,7 @@ export const Div = styled.div`
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	position: relative;
 	@media screen and (max-width: 768px) {
 		width: 16.6rem;
 	}
